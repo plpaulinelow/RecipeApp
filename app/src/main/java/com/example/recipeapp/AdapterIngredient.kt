@@ -42,8 +42,6 @@ class AdapterIngredient() : RecyclerView.Adapter<AdapterIngredient.HolderRecord>
 
         //get data
         val model = ingredientList!!.get(position)
-        val id = model.id
-        val recipeId = model.recipeId
         val name = model.name
 
         //set data to views

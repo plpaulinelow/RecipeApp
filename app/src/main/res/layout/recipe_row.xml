@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp"
+        app:contentPadding="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/colorWhite"
+>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageView_recipe"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/imageView_recipe"
+                android:layout_toStartOf="@+id/button_updateRecipe"
+                android:layout_toLeftOf="@id/button_updateRecipe"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/imageView_recipe">
+            <TextView
+                    android:text="Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" android:textStyle="bold"/>
+            <TextView
+                    android:text="Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_type"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" android:textStyle="italic"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+                android:id="@+id/button_updateRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src= "@drawable/ic_more"
+                android:background="@color/colorWhite"
+        />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

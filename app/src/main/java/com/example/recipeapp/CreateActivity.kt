@@ -202,7 +202,7 @@ class CreateActivity : AppCompatActivity() {
                 "$timestamp",
                 "$timestamp")
             if(insert>0){
-                val ingId=dbHelper.insertIngredients(ingredientList,"$id".toLong())
+                val ingId=dbHelper.insertIngredients(ingredientList,insert)
                 Toast.makeText(this, "Recipe added...", Toast.LENGTH_SHORT).show()
             }
 
